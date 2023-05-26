@@ -12,11 +12,11 @@ body {
     height: 11%;
     display: flex;
     background-color: #be3144;
-    color: #ebdfe0;
     justify-content: flex-end;
     top: 0;
     left: 0;
     position: fixed;
+    border-bottom: 2px solid #29344b;
 }
 
 #navbar ul {
@@ -28,6 +28,15 @@ body {
 #navbar li {
     margin: 20px 20px;
     font-size: 1.5rem;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #ebdfe0;
+}
+
+#navbar a:hover {
+    background-color: #45567d;
 }
 
 #welcome-section {
@@ -152,4 +161,10 @@ footer p {
 
 footer p:nth-of-type(2) {
     margin-left: 10rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
 }
